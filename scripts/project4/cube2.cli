@@ -1,0 +1,7 @@
+
+push
+translate 0 100 0
+scale 5 5 5
+read cube.cli
+pop
+

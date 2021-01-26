@@ -1,0 +1,70 @@
+# test arbitrary rotations
+
+perspective 50 1 1 1000
+push
+lookat 50 50 200  50 50 0  0 1 0
+
+# letters X, Y and Z
+
+push
+translate 60 0 0
+scale 5 5 5
+read x.cli
+pop
+
+push
+translate 0 60 0
+scale 5 5 5
+read y.cli
+pop
+
+push
+translate 0 0 60
+scale 5 5 5
+read z.cli
+pop
+
+# x, y and z axes
+
+vertex 0 0 0
+vertex 50 0 0
+
+vertex 0 0 0
+vertex 0 50 0
+
+vertex 0 0 0
+vertex 0 0 50
+
+# rotated cubes around a line segment
+
+vertex 0 0 0
+vertex 50 100 -30
+
+push
+rotate 30 50 100 -30
+read cube2.cli
+rotate 30 50 100 -30
+read cube2.cli
+rotate 30 50 100 -30
+read cube2.cli
+rotate 30 50 100 -30
+read cube2.cli
+rotate 30 50 100 -30
+read cube2.cli
+rotate 30 50 100 -30
+read cube2.cli
+rotate 30 50 100 -30
+read cube2.cli
+rotate 30 50 100 -30
+read cube2.cli
+rotate 30 50 100 -30
+read cube2.cli
+rotate 30 50 100 -30
+read cube2.cli
+rotate 30 50 100 -30
+read cube2.cli
+rotate 30 50 100 -30
+read cube2.cli
+pop
+pop
+

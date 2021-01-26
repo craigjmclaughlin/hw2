@@ -1,0 +1,9 @@
+# trying a general orient transform on a cube
+perspective 60 1 1 1000
+lookat 100 100 150  0 0 0  0 1 0
+scale 30 30 30
+push
+orient 1 0.5 0.1 0.9 1 1 1 1 1
+read cube.cli
+pop
+

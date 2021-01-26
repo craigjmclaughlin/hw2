@@ -1,0 +1,36 @@
+vertex -1 -1 -1
+vertex  1 -1 -1
+
+vertex  1 -1 -1
+vertex  1  1 -1
+
+vertex  1  1 -1
+vertex -1  1 -1
+
+vertex -1  1 -1
+vertex -1 -1 -1
+
+vertex -1 -1  1
+vertex  1 -1  1
+
+vertex  1 -1  1
+vertex  1  1  1
+
+vertex  1  1  1
+vertex -1  1  1
+
+vertex -1  1  1
+vertex -1 -1  1
+
+vertex -1 -1 -1
+vertex -1 -1  1
+
+vertex  1 -1 -1
+vertex  1 -1  1
+
+vertex  1  1 -1
+vertex  1  1  1
+
+vertex -1  1 -1
+vertex -1  1  1
+

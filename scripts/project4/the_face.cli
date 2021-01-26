@@ -1,0 +1,40 @@
+# head
+
+push
+translate 0.5 0.5 0.0
+scale 0.4 0.4 1.0
+read circle.cli
+pop
+
+# right eye
+
+push
+translate 0.7 0.7 0.0
+scale 0.1 0.1 1.0
+read circle.cli
+pop
+
+# left eye
+
+push
+translate 0.3 0.7 0.0
+scale 0.1 0.1 1.0
+read circle.cli
+pop
+
+# nose
+
+push
+translate 0.5 0.5 0.0
+scale 0.07 0.07 1.0
+read circle.cli
+pop
+
+# mouth
+
+push
+translate 0.5 0.25 0.0
+scale 0.2 0.1 1.0
+read circle.cli
+pop
+

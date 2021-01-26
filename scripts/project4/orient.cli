@@ -1,0 +1,14 @@
+ortho -100 100 -100 100 -100 100
+scale 20 20 1
+push
+# skew transformation along x axis changes the cube into a parallelopiped
+orient 1 1 0 0 1 0 0 0 1
+read cube.cli
+pop
+# skew transformation along y axis changes the cube into a parallelopiped
+push
+translate 2 -2.5 0
+orient 1 0 0 1 1 0 0 0 1
+read cube.cli
+pop
+
