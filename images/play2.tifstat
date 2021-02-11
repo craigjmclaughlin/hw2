@@ -1,0 +1,19 @@
+play2.tif:
+Magic: 0x4949 <little-endian> Version: 0x2a
+Directory 0: offset 262152 (0x40008) next 0 (0)
+SubFileType (254) LONG (4) 1<0>
+ImageWidth (256) SHORT (3) 1<512>
+ImageLength (257) SHORT (3) 1<512>
+BitsPerSample (258) SHORT (3) 1<8>
+Compression (259) SHORT (3) 1<1>
+Photometric (262) SHORT (3) 1<1>
+DocumentName (269) ASCII (2) 43</home/bobbyb/classes/258 ...>
+StripOffsets (273) LONG (4) 32<8 8200 16392 24584 32776 40968 49160 57352 65544 73736 81928 90120 98312 106504 114696 122888 131080 139272 147464 155656 163848 172040 180232 188424 ...>
+Orientation (274) SHORT (3) 1<1>
+SamplesPerPixel (277) SHORT (3) 1<1>
+RowsPerStrip (278) SHORT (3) 1<16>
+StripByteCounts (279) LONG (4) 32<8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 8192 ...>
+XResolution (282) RATIONAL (5) 1<72>
+YResolution (283) RATIONAL (5) 1<72>
+PlanarConfig (284) SHORT (3) 1<1>
+ResolutionUnit (296) SHORT (3) 1<2>

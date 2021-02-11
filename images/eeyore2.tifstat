@@ -1,0 +1,20 @@
+eeyore2.tif:
+Magic: 0x4949 <little-endian> Version: 0x2a
+Directory 0: offset 128136 (0x1f488) next 0 (0)
+SubFileType (254) LONG (4) 1<0>
+ImageWidth (256) SHORT (3) 1<154>
+ImageLength (257) SHORT (3) 1<208>
+BitsPerSample (258) SHORT (3) 4<8 8 8 8>
+Compression (259) SHORT (3) 1<1>
+Photometric (262) SHORT (3) 1<2>
+DocumentName (269) ASCII (2) 37</home/bobbyb/classes/258 ...>
+StripOffsets (273) LONG (4) 4<8 39432 78856 118280>
+Orientation (274) SHORT (3) 1<1>
+SamplesPerPixel (277) SHORT (3) 1<4>
+RowsPerStrip (278) SHORT (3) 1<64>
+StripByteCounts (279) LONG (4) 4<39424 39424 39424 9856>
+XResolution (282) RATIONAL (5) 1<300>
+YResolution (283) RATIONAL (5) 1<300>
+PlanarConfig (284) SHORT (3) 1<1>
+ResolutionUnit (296) SHORT (3) 1<2>
+ExtraSamples (338) SHORT (3) 1<1>

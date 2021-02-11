@@ -1,0 +1,19 @@
+playrgb.tif:
+Magic: 0x4d4d <big-endian> Version: 0x2a
+Directory 0: offset 786440 (0xc0008) next 0 (0)
+SubFileType (254) LONG (4) 1<0>
+ImageWidth (256) SHORT (3) 1<512>
+ImageLength (257) SHORT (3) 1<512>
+BitsPerSample (258) SHORT (3) 3<8 8 8>
+Compression (259) SHORT (3) 1<1>
+Photometric (262) SHORT (3) 1<2>
+DocumentName (269) ASCII (2) 45</home/bobbyb/classes/258 ...>
+StripOffsets (273) LONG (4) 103<8 7688 15368 23048 30728 38408 46088 53768 61448 69128 76808 84488 92168 99848 107528 115208 122888 130568 138248 145928 153608 161288 168968 176648 ...>
+Orientation (274) SHORT (3) 1<1>
+SamplesPerPixel (277) SHORT (3) 1<3>
+RowsPerStrip (278) SHORT (3) 1<5>
+StripByteCounts (279) LONG (4) 103<7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 ...>
+XResolution (282) RATIONAL (5) 1<72>
+YResolution (283) RATIONAL (5) 1<72>
+PlanarConfig (284) SHORT (3) 1<1>
+ResolutionUnit (296) SHORT (3) 1<2>

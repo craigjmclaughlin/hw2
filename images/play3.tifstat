@@ -1,0 +1,17 @@
+play3.tif:
+Magic: 0x4d4d <big-endian> Version: 0x2a
+Directory 0: offset 8 (0x8) next 0 (0)
+SubFileType (254) LONG (4) 1<0>
+ImageWidth (256) SHORT (3) 1<512>
+ImageLength (257) SHORT (3) 1<512>
+BitsPerSample (258) SHORT (3) 1<8>
+Compression (259) SHORT (3) 1<1>
+Photometric (262) SHORT (3) 1<0>
+StripOffsets (273) LONG (4) 1<470>
+SamplesPerPixel (277) SHORT (3) 1<1>
+RowsPerStrip (278) SHORT (3) 1<512>
+StripByteCounts (279) LONG (4) 1<262144>
+XResolution (282) RATIONAL (5) 1<72>
+YResolution (283) RATIONAL (5) 1<72>
+ResolutionUnit (296) SHORT (3) 1<2>
+34377 (0x8649) BYTE (1) 272<0x38 0x42 0x49 0x4d 0x3 0xe9 00 00 00 00 00 0x78 00 0x3 00 00 00 0x48 00 0x48 00 00 00 00 ...>
