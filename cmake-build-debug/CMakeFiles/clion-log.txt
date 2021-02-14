@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/bobbyb/Documents/classes/3258/src/CS3258-cmake
+"C:\Users\Craig\Desktop\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/msys64/mingw64/bin/mingw32-make.exe -DCMAKE_C_COMPILER=C:/msys64/mingw64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/msys64/mingw64/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" C:\Users\Craig\Desktop\3258-Source
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/bobbyb/Documents/classes/3258/src/CS3258-cmake/cmake-build-debug
+-- Build files have been written to: C:/Users/Craig/Desktop/3258-Source/cmake-build-debug

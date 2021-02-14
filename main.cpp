@@ -16,9 +16,10 @@
  *
  */
 
-#include <GLUT/glut.h>
+#include <GL/glut.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include "CLI.h"
 
 /*	Create checkerboard image	*/
 #define	checkImageWidth 1024
@@ -192,19 +193,9 @@ void
 main_loop(char line[])
 {
    /* PUT YOUR CLI CODE HERE! */
-  
-   if (line == NULL)
-   {
-      printf("Exiting...\n");
-      exit(0);
-   }
-   else
-      printf("RESULT: %s\n",line);
-     
-   printf("CLI> ");
-   fflush(stdout);
+   std::stack<char*> emptyStack;
+   CLI::CLI_ProcessLine(line, emptyStack);
 
-   return;
 }
 
 #define MAXLINE 1024
@@ -295,8 +286,12 @@ main(int argc, char** argv)
    glutMouseFunc(mouse);
    //   glutMotionFunc(motion);
 
-   printf("CLI> ");
-   fflush(stdout);
+
+    std::stack<char*> empty;
+    std::cout << printf("CLI> ");
+    char input[MAXLINE];
+    std::cin.getline(input, MAXLINE);
+    main_loop(input);
 
    glutMainLoop();
    return 0; 

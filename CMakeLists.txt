@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.15)
 project(CS3258_cmake)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -DGL_SILENCE_DEPRECATION")
 
-add_executable(CS3258_cmake main.cpp)
+add_executable(CS3258_cmake main.cpp CLI.cpp)
 
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
