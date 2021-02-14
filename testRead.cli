@@ -1,0 +1,32 @@
+draw 1 2 3
+draw,1,2,3
+DRAW 1 2 3
+dRaW 1 2 3
+draw
+draw 1
+draw 1 2
+draw 1.00 2.123 3.2394293
+draw . - +
+draw -0.1 +.5 .00000
+color 1 2 3
+color,1,2,3
+COLOR 1 2 3
+cOlOr 1 2 3
+color
+color 1
+color 1 2
+color 1.00 2.123 3.2394293
+color . - +
+color -0.1 +.5 .00000
+move 1 2 3
+move,1,2,3
+MOVE 1 2 3
+MoVe 1 2 3
+move
+move 1
+move 1 2
+move 1.00 2.123 3.2394293
+move . - +
+move -0.1 +.5 .00000
+read C:\Users\Craig\Desktop\3258-Source\testRead.cli
+read,C:\Users\Craig\Desktop\3258-Source\testsValid.cli

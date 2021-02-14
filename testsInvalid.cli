@@ -1,0 +1,31 @@
+draw 0...1
+draw ---
+draw ..
+draw 0a
+draw 28383838.3939'
+draw a4
+draw a b c
+color 0...1
+color ---
+color ..
+color 0a
+color 28383838.3939'
+color a4
+color a b c
+move 0...1
+move ---
+move ..
+move 0a
+move 28383838.3939'
+move a4
+move a b c
+read randomtext
+read 1111
+read,
+read
+read C:\Users\Craig\Desktop\3258-Source\testsInvalid.cli
+
+
+,
+123
+0

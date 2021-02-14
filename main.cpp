@@ -196,6 +196,8 @@ main_loop(char line[])
    std::stack<char*> emptyStack;
    CLI::CLI_ProcessLine(line, emptyStack);
 
+   std::cout << "Main loop complete.\n";
+
 }
 
 #define MAXLINE 1024

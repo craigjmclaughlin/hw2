@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Craig/Desktop/3258-Source/CLI.cpp
+stack
+-
+string.h
+-
+iostream
+-
+string
+-
+sstream
+-
+CLI.h
+C:/Users/Craig/Desktop/3258-Source/CLI.h
+
 C:/Users/Craig/Desktop/3258-Source/CLI.h
 stack
 -
@@ -17,14 +31,4 @@ fstream
 -
 string
 -
-
-C:/Users/Craig/Desktop/3258-Source/main.cpp
-GL/glut.h
--
-stdlib.h
--
-stdio.h
--
-CLI.h
-C:/Users/Craig/Desktop/3258-Source/CLI.h
 

@@ -28,6 +28,7 @@ bool CLI::isValidNum(char* num){
             }
         }
         check++;
+        i++;
     }
     return true;
 }
@@ -42,7 +43,7 @@ void CLI::CLI_Move(char params[]){
     char* p3= strtok(NULL, " ,");
 
     if(!(isValidNum(p1) && isValidNum(p2) && isValidNum(p3))){
-        std::cout << "expecting numeric parameters";
+        std::cout << "expecting numeric parameters\n";
     }else{
         double d1= CLI_FloatPar(p1);
         double d2= CLI_FloatPar(p2);
@@ -58,7 +59,7 @@ void CLI::CLI_Draw(char params[]){
     char* p3= strtok(NULL, " ,");
 
     if(!(isValidNum(p1) && isValidNum(p2) && isValidNum(p3))){
-        std::cout << "expecting numeric parameters";
+        std::cout << "expecting numeric parameters\n";
     }else{
         double d1= CLI_FloatPar(p1);
         double d2= CLI_FloatPar(p2);
@@ -72,11 +73,10 @@ void CLI::CLI_Color(char params[]){
     char* p1= strtok(NULL, " ,");
     char* p2= strtok(NULL, " ,");
     char* p3= strtok(NULL, " ,");
-    std::cout << "p1: " << p1 << " p2: " << p2 << " p3: " << p3 << "";
 
 
     if(!(isValidNum(p1) && isValidNum(p2) && isValidNum(p3))){
-        std::cout << "expecting numeric parameters";
+        std::cout << "expecting numeric parameters\n";
     }else{
         double d1= CLI_FloatPar(p1);
         double d2= CLI_FloatPar(p2);
@@ -91,14 +91,15 @@ void CLI::CLI_Color(char params[]){
 
 //add file to stack
 void CLI::CLI_Read(char* fileName, std::stack<char*> fileStack){
+    std::cout << "Now reading " << fileName << "\n";
+
     if(fileStack.size()>5){
         std::cout << "Too many files being read\n";
+        fileStack.pop();
         return;
     }
 
     std::ifstream newFile;
-    std::cout << fileName << "\n";
-
     newFile.open(fileName);
 
     if(newFile) {
@@ -106,24 +107,20 @@ void CLI::CLI_Read(char* fileName, std::stack<char*> fileStack){
         while (std::getline(newFile, line))
         {
             std::istringstream iss(line);
-            std::cout << "Current line: " << line << "\n";
             char* linePointer = &line[0];
             CLI_ProcessLine(linePointer, fileStack);
         }
     }else{
-        std::cout << "File cannot be read";
+        std::cout << "File cannot be read\n";
         fileStack.pop();
         return;
     }
 
     newFile.close();
     fileStack.pop();
-
-
 }
 
 void CLI::CLI_ProcessLine(char* currLine, std::stack<char*> fileStack){
-    //char* command= CLI_StringPar(currLine);
     char* command= strtok(currLine, " ,");
 
     if (command==NULL) {
@@ -141,10 +138,18 @@ void CLI::CLI_ProcessLine(char* currLine, std::stack<char*> fileStack){
         CLI_Color(currLine);
     } else if (strcmp(command, "read") == 0) {
         char* newFileName= strtok(NULL, " ,");
-
+        if(newFileName==NULL){
+            std::cout << "Null Filename\n";
+            return;
+        }
+        if(fileStack.size()>0){
+            if(strcmp(fileStack.top(), newFileName) == 0){
+                std::cout << "Cannot call read on the file that is being read\n";
+                return;
+            }
+        }
         fileStack.push(newFileName);
         CLI_Read(newFileName, fileStack);
-
     } else {
         std::cout << "invalid command\n";
     }
