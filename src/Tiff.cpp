@@ -7,6 +7,7 @@
 #include <iterator>
 #include <fstream>
 #include <GL/gl.h>
+#include <sstream>
 
 #define	checkImageWidth 1024
 #define	checkImageHeight 1024
@@ -131,12 +132,6 @@ void Tiff::tiffRead(std::string filename)
     bool blackIsZero= info.entries[262].data[0];
     int numStrips= info.entries[279].count;
 
-    std::cout <<  "width " << std::dec << imageWidth << "\n";
-    std::cout << "height " << imageHeight << "\n";
-    std::cout << "spp " << samplesPerPixel << "\n";
-    std::cout << "rowsPerStrip " << rowsPerStrip << "\n";
-    std::cout << "NumStrips " << numStrips << "\n";
-
     if(info.entries.find(284)->second.count !=0){
         if(info.entries[284].data[0] != 1){
             std::cout << "Only supports planarConfig=1. planarConfig= " << info.entries[284].data[0]  << "\n";
@@ -232,7 +227,9 @@ void Tiff::tiffStat(std::string filename) {
     }else if(buffer[0]=='M' && buffer[1]=='M'){
         fileIsLE=false;
     }else{
-        std::cout << "File endianness is not formatted correctly\n";
+        std::cout << "File endianness is not formatted correctly " << buffer << "\n";
+        std::cout << "(0x" << std::hex << buffer << ")\n";
+
         return;
     }
     bool endMatch = (checkLE() == fileIsLE);
@@ -370,21 +367,37 @@ void Tiff::tiffWrite(std::string filename, size_t x0, size_t y0, size_t xc, size
     std::ofstream outFile("C:\\Users\\Craig\\Desktop\\3258-Source\\tiffWriteFiles\\" + filename, std::ios::binary);
     if(checkLE()){
         outFile.write("II", 2);
-        outFile << std::hex << "II";
     }else{
         outFile.write("MM", 2);
-        outFile << std::hex << "MM";
     }
-    outFile.write("42", 2);
-    outFile.write("8", 4);
+    std::stringstream convert;
+    std::string str= "";
+
+    convert << std::hex << "2a";
+    str= convert.str();
+    outFile.write((char*)&str, 2);
+    convert.clear(), str= "";
+
+    convert << std::hex << std::to_string(info.ifdAddress);
+    str= convert.str();
+    outFile.write((char*)&str, 2);
+    convert.clear(), str= "";
 
     std::map<short, ifdEntry>::iterator it;
 
     for (it = info.entries.begin(); it != info.entries.end(); it++) {
         for(size_t i= 0; i< it->second.data.size(); i++){
-            outFile.write((char*) &it->second.data[i], getTypeSize(it->second.type));
+
+            convert << std::hex << std::to_string(it->second.data[i]);
+            str= convert.str();
+            outFile.write((char*)&str, getTypeSize(it->second.type));
+            convert.clear(), str= "";
+
             if(it->second.type == 5){
-                outFile.write((char*) &it->second.data[i], getTypeSize(it->second.type));
+                convert << std::hex << std::to_string(it->second.data[i]);
+                str= convert.str();
+                outFile.write((char*)&str, getTypeSize(it->second.type));
+                convert.clear(), str= "";
             }
         }
     }
