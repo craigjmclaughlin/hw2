@@ -364,7 +364,8 @@ void Tiff::tiffWrite(std::string filename, size_t x0, size_t y0, size_t xc, size
         std::cout << "nothing has been read, nothing to write\n";
         return;
     }
-    std::ofstream outFile("C:\\Users\\Craig\\Desktop\\3258-Source\\tiffWriteFiles\\" + filename, std::ios::binary);
+
+    std::ofstream outFile(filename, std::ios::binary);
     if(checkLE()){
         outFile.write("II", 2);
     }else{
