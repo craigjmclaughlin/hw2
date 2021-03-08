@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Craig/Desktop/3258-Source/CLI.cpp" "C:/Users/Craig/Desktop/3258-Source/cmake-build-debug/CMakeFiles/CS3258_cmake.dir/CLI.cpp.obj"
-  "C:/Users/Craig/Desktop/3258-Source/main.cpp" "C:/Users/Craig/Desktop/3258-Source/cmake-build-debug/CMakeFiles/CS3258_cmake.dir/main.cpp.obj"
+  "C:/Users/Craig/Desktop/3258-Source/src/CLI.cpp" "C:/Users/Craig/Desktop/3258-Source/cmake-build-debug/CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.obj"
+  "C:/Users/Craig/Desktop/3258-Source/src/Tiff.cpp" "C:/Users/Craig/Desktop/3258-Source/cmake-build-debug/CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.obj"
+  "C:/Users/Craig/Desktop/3258-Source/src/main.cpp" "C:/Users/Craig/Desktop/3258-Source/cmake-build-debug/CMakeFiles/CS3258_cmake.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

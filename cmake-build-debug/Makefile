@@ -122,59 +122,86 @@ CS3258_cmake/fast:
 	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/build
 .PHONY : CS3258_cmake/fast
 
-CLI.obj: CLI.cpp.obj
+src/CLI.obj: src/CLI.cpp.obj
 
-.PHONY : CLI.obj
-
-# target to build an object file
-CLI.cpp.obj:
-	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/CLI.cpp.obj
-.PHONY : CLI.cpp.obj
-
-CLI.i: CLI.cpp.i
-
-.PHONY : CLI.i
-
-# target to preprocess a source file
-CLI.cpp.i:
-	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/CLI.cpp.i
-.PHONY : CLI.cpp.i
-
-CLI.s: CLI.cpp.s
-
-.PHONY : CLI.s
-
-# target to generate assembly for a file
-CLI.cpp.s:
-	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/CLI.cpp.s
-.PHONY : CLI.cpp.s
-
-main.obj: main.cpp.obj
-
-.PHONY : main.obj
+.PHONY : src/CLI.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+src/CLI.cpp.obj:
+	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.obj
+.PHONY : src/CLI.cpp.obj
 
-main.i: main.cpp.i
+src/CLI.i: src/CLI.cpp.i
 
-.PHONY : main.i
+.PHONY : src/CLI.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/CLI.cpp.i:
+	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.i
+.PHONY : src/CLI.cpp.i
 
-main.s: main.cpp.s
+src/CLI.s: src/CLI.cpp.s
 
-.PHONY : main.s
+.PHONY : src/CLI.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/CLI.cpp.s:
+	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.s
+.PHONY : src/CLI.cpp.s
+
+src/Tiff.obj: src/Tiff.cpp.obj
+
+.PHONY : src/Tiff.obj
+
+# target to build an object file
+src/Tiff.cpp.obj:
+	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.obj
+.PHONY : src/Tiff.cpp.obj
+
+src/Tiff.i: src/Tiff.cpp.i
+
+.PHONY : src/Tiff.i
+
+# target to preprocess a source file
+src/Tiff.cpp.i:
+	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.i
+.PHONY : src/Tiff.cpp.i
+
+src/Tiff.s: src/Tiff.cpp.s
+
+.PHONY : src/Tiff.s
+
+# target to generate assembly for a file
+src/Tiff.cpp.s:
+	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.s
+.PHONY : src/Tiff.cpp.s
+
+src/main.obj: src/main.cpp.obj
+
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles\CS3258_cmake.dir\build.make CMakeFiles/CS3258_cmake.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -185,12 +212,15 @@ help:
 	@echo ... CS3258_cmake
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... CLI.obj
-	@echo ... CLI.i
-	@echo ... CLI.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/CLI.obj
+	@echo ... src/CLI.i
+	@echo ... src/CLI.s
+	@echo ... src/Tiff.obj
+	@echo ... src/Tiff.i
+	@echo ... src/Tiff.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 

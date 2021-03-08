@@ -8,6 +8,7 @@
 #include <string>
 #include <sstream>
 #include "CLI.h"
+#include "Tiff.h"
 
 
 bool CLI::isValidNum(char* num){
@@ -150,7 +151,32 @@ void CLI::CLI_ProcessLine(char* currLine, std::stack<char*> fileStack){
         }
         fileStack.push(newFileName);
         CLI_Read(newFileName, fileStack);
-    } else {
+    } else if(strcmp(command, "tiffread") == 0){
+        char* newFileName= strtok(NULL, " ,");
+        if(newFileName==NULL){
+            std::cout << "Null Filename\n";
+            return;
+        }
+        Tiff::tiffRead(newFileName);
+    }else if(strcmp(command, "tiffstat") == 0){
+        char* newFileName= strtok(NULL, " ,");
+        if(newFileName==NULL){
+            std::cout << "Null Filename\n";
+            return;
+        }
+        Tiff::tiffStat(newFileName);
+    }else if(strcmp(command, "tiffwrite") == 0){
+        char* newFileName= strtok(NULL, " ,");
+        if(newFileName==NULL){
+            std::cout << "Null Filename\n";
+            return;
+        }
+        auto x0= (size_t)(strtok(NULL, " ,"));
+        auto y0= (size_t)(strtok(NULL, " ,"));
+        auto xc= (size_t)(strtok(NULL, " ,"));
+        auto yc= (size_t)(strtok(NULL, " ,"));
+        Tiff::tiffWrite(newFileName, x0, y0, xc, yc);
+    }else{
         std::cout << "invalid command\n";
     }
 }

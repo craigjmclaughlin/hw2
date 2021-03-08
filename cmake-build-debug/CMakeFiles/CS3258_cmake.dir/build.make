@@ -56,48 +56,63 @@ include CMakeFiles/CS3258_cmake.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CS3258_cmake.dir/flags.make
 
-CMakeFiles/CS3258_cmake.dir/main.cpp.obj: CMakeFiles/CS3258_cmake.dir/flags.make
-CMakeFiles/CS3258_cmake.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Craig\Desktop\3258-Source\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CS3258_cmake.dir/main.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CS3258_cmake.dir\main.cpp.obj -c C:\Users\Craig\Desktop\3258-Source\main.cpp
+CMakeFiles/CS3258_cmake.dir/src/main.cpp.obj: CMakeFiles/CS3258_cmake.dir/flags.make
+CMakeFiles/CS3258_cmake.dir/src/main.cpp.obj: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Craig\Desktop\3258-Source\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CS3258_cmake.dir/src/main.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CS3258_cmake.dir\src\main.cpp.obj -c C:\Users\Craig\Desktop\3258-Source\src\main.cpp
 
-CMakeFiles/CS3258_cmake.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CS3258_cmake.dir/main.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Craig\Desktop\3258-Source\main.cpp > CMakeFiles\CS3258_cmake.dir\main.cpp.i
+CMakeFiles/CS3258_cmake.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CS3258_cmake.dir/src/main.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Craig\Desktop\3258-Source\src\main.cpp > CMakeFiles\CS3258_cmake.dir\src\main.cpp.i
 
-CMakeFiles/CS3258_cmake.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CS3258_cmake.dir/main.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Craig\Desktop\3258-Source\main.cpp -o CMakeFiles\CS3258_cmake.dir\main.cpp.s
+CMakeFiles/CS3258_cmake.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CS3258_cmake.dir/src/main.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Craig\Desktop\3258-Source\src\main.cpp -o CMakeFiles\CS3258_cmake.dir\src\main.cpp.s
 
-CMakeFiles/CS3258_cmake.dir/CLI.cpp.obj: CMakeFiles/CS3258_cmake.dir/flags.make
-CMakeFiles/CS3258_cmake.dir/CLI.cpp.obj: ../CLI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Craig\Desktop\3258-Source\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CS3258_cmake.dir/CLI.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CS3258_cmake.dir\CLI.cpp.obj -c C:\Users\Craig\Desktop\3258-Source\CLI.cpp
+CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.obj: CMakeFiles/CS3258_cmake.dir/flags.make
+CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.obj: ../src/CLI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Craig\Desktop\3258-Source\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CS3258_cmake.dir\src\CLI.cpp.obj -c C:\Users\Craig\Desktop\3258-Source\src\CLI.cpp
 
-CMakeFiles/CS3258_cmake.dir/CLI.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CS3258_cmake.dir/CLI.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Craig\Desktop\3258-Source\CLI.cpp > CMakeFiles\CS3258_cmake.dir\CLI.cpp.i
+CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Craig\Desktop\3258-Source\src\CLI.cpp > CMakeFiles\CS3258_cmake.dir\src\CLI.cpp.i
 
-CMakeFiles/CS3258_cmake.dir/CLI.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CS3258_cmake.dir/CLI.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Craig\Desktop\3258-Source\CLI.cpp -o CMakeFiles\CS3258_cmake.dir\CLI.cpp.s
+CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Craig\Desktop\3258-Source\src\CLI.cpp -o CMakeFiles\CS3258_cmake.dir\src\CLI.cpp.s
+
+CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.obj: CMakeFiles/CS3258_cmake.dir/flags.make
+CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.obj: ../src/Tiff.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Craig\Desktop\3258-Source\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CS3258_cmake.dir\src\Tiff.cpp.obj -c C:\Users\Craig\Desktop\3258-Source\src\Tiff.cpp
+
+CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Craig\Desktop\3258-Source\src\Tiff.cpp > CMakeFiles\CS3258_cmake.dir\src\Tiff.cpp.i
+
+CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Craig\Desktop\3258-Source\src\Tiff.cpp -o CMakeFiles\CS3258_cmake.dir\src\Tiff.cpp.s
 
 # Object files for target CS3258_cmake
 CS3258_cmake_OBJECTS = \
-"CMakeFiles/CS3258_cmake.dir/main.cpp.obj" \
-"CMakeFiles/CS3258_cmake.dir/CLI.cpp.obj"
+"CMakeFiles/CS3258_cmake.dir/src/main.cpp.obj" \
+"CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.obj" \
+"CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.obj"
 
 # External object files for target CS3258_cmake
 CS3258_cmake_EXTERNAL_OBJECTS =
 
-CS3258_cmake.exe: CMakeFiles/CS3258_cmake.dir/main.cpp.obj
-CS3258_cmake.exe: CMakeFiles/CS3258_cmake.dir/CLI.cpp.obj
+CS3258_cmake.exe: CMakeFiles/CS3258_cmake.dir/src/main.cpp.obj
+CS3258_cmake.exe: CMakeFiles/CS3258_cmake.dir/src/CLI.cpp.obj
+CS3258_cmake.exe: CMakeFiles/CS3258_cmake.dir/src/Tiff.cpp.obj
 CS3258_cmake.exe: CMakeFiles/CS3258_cmake.dir/build.make
 CS3258_cmake.exe: C:/msys64/mingw64/lib/libfreeglut.dll.a
 CS3258_cmake.exe: CMakeFiles/CS3258_cmake.dir/linklibs.rsp
 CS3258_cmake.exe: CMakeFiles/CS3258_cmake.dir/objects1.rsp
 CS3258_cmake.exe: CMakeFiles/CS3258_cmake.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Craig\Desktop\3258-Source\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CS3258_cmake.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Craig\Desktop\3258-Source\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable CS3258_cmake.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CS3258_cmake.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

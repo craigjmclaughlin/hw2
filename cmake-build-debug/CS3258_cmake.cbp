@@ -82,13 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Craig/Desktop/3258-Source/CLI.cpp">
+		<Unit filename="C:/Users/Craig/Desktop/3258-Source/src/CLI.cpp">
 			<Option target="CS3258_cmake"/>
 		</Unit>
-		<Unit filename="C:/Users/Craig/Desktop/3258-Source/CLI.h">
+		<Unit filename="C:/Users/Craig/Desktop/3258-Source/src/CLI.h">
 			<Option target="CS3258_cmake"/>
 		</Unit>
-		<Unit filename="C:/Users/Craig/Desktop/3258-Source/main.cpp">
+		<Unit filename="C:/Users/Craig/Desktop/3258-Source/src/Tiff.cpp">
+			<Option target="CS3258_cmake"/>
+		</Unit>
+		<Unit filename="C:/Users/Craig/Desktop/3258-Source/src/Tiff.h">
+			<Option target="CS3258_cmake"/>
+		</Unit>
+		<Unit filename="C:/Users/Craig/Desktop/3258-Source/src/main.cpp">
 			<Option target="CS3258_cmake"/>
 		</Unit>
 		<Unit filename="C:/Users/Craig/Desktop/3258-Source/CMakeLists.txt">

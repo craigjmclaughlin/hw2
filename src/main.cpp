@@ -20,11 +20,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "CLI.h"
+#include "Tiff.h"
 
 /*	Create checkerboard image	*/
 #define	checkImageWidth 1024
 #define	checkImageHeight 1024
-GLubyte checkImage[checkImageHeight][checkImageWidth][3];
+extern GLubyte checkImage[checkImageHeight][checkImageWidth][3];
 
 static GLint height;
 

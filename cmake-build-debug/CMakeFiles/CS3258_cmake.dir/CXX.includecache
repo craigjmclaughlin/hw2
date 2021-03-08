@@ -6,29 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Craig/Desktop/3258-Source/CLI.cpp
-stack
--
-string.h
--
+C:/Users/Craig/Desktop/3258-Source/src/Tiff.cpp
+Tiff.h
+C:/Users/Craig/Desktop/3258-Source/src/Tiff.h
 iostream
 -
-string
--
-sstream
--
-CLI.h
-C:/Users/Craig/Desktop/3258-Source/CLI.h
-
-C:/Users/Craig/Desktop/3258-Source/CLI.h
-stack
--
-string.h
--
-iostream
+iterator
 -
 fstream
 -
+GL/gl.h
+-
+
+C:/Users/Craig/Desktop/3258-Source/src/Tiff.h
 string
+-
+map
+-
+vector
 -
 
